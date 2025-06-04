@@ -1,12 +1,64 @@
-# React + Vite
+ Anvaya project 
+ 
+Purpose
+Anvaya is a simple CRM web app to manage leads, assign tasks to sales agents, and track performance with reports.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Goals
+Lead management.
+Enable sales agents to track leads and agents.
+Provide clear reports on lead progress.
 
-Currently, two official plugins are available:
+Key Features
+Lead Management
+Create/edit/delete leads (name, email, phone, company, priority, lifecycle stage, assigned agent).
+List leads with filters (sales agent, priority, stage) and sorting (closing date, priority).
+URL-based filtering (e.g., /leads?salesAgent=John).
+Reports
+Bar chart: Leads closed last week.
+Pie chart: Lead status distribution (New, Contacted, Qualified, Closed).
+Filter reports by agent or date range.
+User Management
+Assign agents to leads.
+Admins add/remove agents.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Technical Requirements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Frontend: React, bootstrap and CSS.
+Backend: Node.js, Express, MongoDB.
+API: RESTful for CRUD on leads/agents.
+Charts: Chart.js for reports.
+Deployment: Github and Vercel.
+User Interface
+Lead List: Table with filter/sort options.
+Lead Form: Add/edit lead details.
+Lead Details: View lead all details.
+Reports: Show charts with filters.
+Sidebar: Menu for Leads, Reports, Users.
+
+
+Anvaya CRM Checklist
+
+Backend
+Set up Node.js/Express with MongoDB.
+Create schemas: leads, agents, tags, comments.
+Build REST API: CRUD /leads (filter by agent, leads),                                              POST/GET /leads/:id/comments, GET /reports (closed-last-week, status-distribution).
+Seed sample data (5 leads, 2 agents).
+Test APIs with Postman.
+
+
+Frontend
+Set up React and for styling bootstrap.
+Build components: LeadList, LeadForm, LeadDetails,Reports, Sidebar (menu).
+Connect to APIs (fetch/axios).
+Support URL filters (e.g., /leads?salesAgent=John).
+Reports
+Bar chart: Leads closed last week.
+Pie chart: Lead status.
+
+Testing
+Test on Chrome, Firefox, Edge,                                                                                             Test lead/agent CRUD.
+Test responsiveness
+Test mobile UI
+
+
