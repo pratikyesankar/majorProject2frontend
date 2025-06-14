@@ -122,32 +122,6 @@ Get all sales agents
 
 ### **POST /leads/\:id/comments**
 
- 
-
-### **GET /leads/\:id/comments**
-
-Get all comments for a lead
-
-### **POST /tags**
-
-Add a new tag
-
-### **GET /tags**
-
-Get all tags
-
-### **GET /report/last-week**
-
-Get leads closed in the last 7 days (status = "Closed")
-
-### **GET /report/pipeline**
-
-Get all leads grouped by lead status
-
-### **GET /report/closed-by-agent**
-
-Get count of closed leads per sales agent
-
 ---
 ## Contact
 * For bugs or feature requests, please reach out to pratikiitkgp585@gmail.com
