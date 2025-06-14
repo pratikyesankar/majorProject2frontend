@@ -13,7 +13,7 @@ function LeadForm() {
     priority: "Medium",
   })
   const [agents, setAgents] = useState([])
-  const [message, setMessage] = useState("") // Optional: Add state for feedback
+  const [message, setMessage] = useState("")
 
   useEffect(() => {
     const fetchAgents = async () => {
