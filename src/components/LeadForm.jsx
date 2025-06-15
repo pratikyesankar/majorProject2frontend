@@ -73,7 +73,7 @@ function LeadForm() {
           <input
             type="text"
             name="name"
-            className="form-control"
+            className="form-control bg-dark"
             value={formData.name}
             onChange={handleChange}
             required
@@ -83,7 +83,7 @@ function LeadForm() {
           <label className="form-label">Lead Source</label>
           <select
             name="source"
-            className="form-control"
+            className="form-control bg-dark"
             value={formData.source}
             onChange={handleChange}
             required
@@ -100,7 +100,7 @@ function LeadForm() {
           <label className="form-label">Sales Agent</label>
           <select
             name="salesAgent"
-            className="form-control"
+            className="form-control bg-dark"
             value={formData.salesAgent}
             onChange={handleChange}
             required
@@ -117,7 +117,7 @@ function LeadForm() {
           <label className="form-label">Lead Status</label>
           <select
             name="status"
-            className="form-control"
+            className="form-control bg-dark"
             value={formData.status}
             onChange={handleChange}
             required
@@ -133,7 +133,7 @@ function LeadForm() {
           <label className="form-label">Priority</label>
           <select
             name="priority"
-            className="form-control"
+            className="form-control bg-dark"
             value={formData.priority}
             onChange={handleChange}
             required
@@ -150,7 +150,7 @@ function LeadForm() {
           <input
             type="number"
             name="timeToClose"
-            className="form-control"
+            className="form-control bg-dark"
             value={formData.timeToClose}
             onChange={handleChange}
             min="1"
@@ -162,7 +162,7 @@ function LeadForm() {
           <select
             multiple
             name="tags"
-            className="form-control"
+            className="form-control bg-dark text-white"
             value={formData.tags}
             onChange={handleTagsChange}
           >

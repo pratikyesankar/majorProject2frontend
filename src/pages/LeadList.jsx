@@ -44,12 +44,14 @@ function LeadList() {
 
   return (
     <div>
-      <h2>Lead List</h2>
+     <div className="d-flex justify-content-between">
+       <h2>Lead List</h2>
       <div className="mb-3">
         <Link to="/leads/new" className="btn btn-primary">
-          Add New Lead
+          + Add New Lead
         </Link>
       </div>
+     </div>
       <div className="mb-3">
         <label>Filter by Status:</label>
         {leadStatuses.map((status) => (

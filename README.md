@@ -1,4 +1,4 @@
-# 📊 Anvaya CRM App
+#  Anvaya CRM App
 
 A full-stack CRM (Customer Relationship Management) system for managing leads, tracking sales agent performance, adding comments, tagging leads, and viewing visual reports.
 

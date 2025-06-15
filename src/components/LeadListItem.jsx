@@ -10,7 +10,7 @@ function LeadListItem({ lead }) {
 
   return (
     <li
-      className="list-group-item"
+      className="list-group-item bg-dark text-light w-50"
       onClick={handleClick}
       style={{ cursor: "pointer" }}
     >

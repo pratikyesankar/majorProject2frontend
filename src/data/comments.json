@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "1",
+    "lead": "1",
+    "commentText": "Initial contact made.",
+    "author": "User",
+    "createdAt": "2025-05-20T11:00:00Z"
+  },
+  {
+    "_id": "2",
+    "lead": "1",
+    "commentText": "Awaiting response.",
+    "author": "User",
+    "createdAt": "2025-05-21T11:00:00Z"
+  },
+  {
+    "_id": "3",
+    "lead": "2",
+    "commentText": "Scheduled meeting.",
+    "author": "User",
+    "createdAt": "2025-05-22T13:00:00Z"
+  }
+]

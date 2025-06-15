@@ -35,12 +35,14 @@ function Dashboard() {
 
   return (
     <div>
-      <h2>Anvaya CRM Dashboard</h2>
+   <div className="d-flex justify-content-between">
+       <h2>Anvaya CRM Dashboard</h2>
       <div className="mb-3">
         <Link to="/leads/new" className="btn btn-primary">
-          Add New Lead
+          + Add New Lead
         </Link>
       </div>
+   </div>
       <div className="mb-3">
         {leadStatuses.map((status) => (
           <button

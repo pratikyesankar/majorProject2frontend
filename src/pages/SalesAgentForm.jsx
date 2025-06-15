@@ -27,22 +27,22 @@ function SalesAgentForm() {
       <h2>Add New Sales Agent</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label className="form-label">Agent Name</label>
+          <label className="form-label bg-dark">Agent Name</label>
           <input
             type="text"
             name="name"
-            className="form-control"
+            className="form-control bg-dark"
             value={formData.name}
             onChange={handleChange}
             required
           />
         </div>
         <div className="mb-3">
-          <label className="form-label">Email Address</label>
+          <label className="form-label bg-dark">Email Address</label>
           <input
             type="email"
             name="email"
-            className="form-control"
+            className="form-control bg-dark"
             value={formData.email}
             onChange={handleChange}
             required

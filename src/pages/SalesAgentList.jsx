@@ -20,15 +20,17 @@ function SalesAgentList() {
 
   return (
     <div>
-      <h2>Sales Agents</h2>
+     <div className="d-flex justify-content-between">
+       <h2>Sales Agents</h2>
       <div className="mb-3">
         <Link to="/agents/new" className="btn btn-primary">
-          Add New Agent
+          + Add New Agent
         </Link>
       </div>
-      <ul className="list-group">
+     </div>
+      <ul className="list-group bg-dark w-50">
         {agents.map((agent) => (
-          <li key={agent._id} className="list-group-item">
+          <li key={agent._id} className="list-group-item bg-dark text-light">
             {agent.name} - {agent.email}
           </li>
         ))}

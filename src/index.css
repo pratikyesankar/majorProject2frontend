@@ -1,8 +1,11 @@
 body {
+  color: 	#aeaeae;
+  background: #161b22;
   font-family: Arial, sans-serif;
 }
 .sidebar {
-  background-color: #f8f9fa;
+    color: 	#aeaeae;
+  background: #161b22;
   height: 100vh;
   padding: 20px;
 }

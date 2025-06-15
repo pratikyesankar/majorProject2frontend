@@ -1,0 +1,53 @@
+[
+  {
+    "_id": "1",
+    "name": "Acme Corp",
+    "source": "Website",
+    "salesAgent": {
+      "_id": "1",
+      "name": "John Doe",
+      "email": "john@example.com"
+    },
+    "status": "New",
+    "tags": [
+      { "_id": "1", "name": "High Value" },
+      { "_id": "2", "name": "Follow-up" }
+    ],
+    "timeToClose": 30,
+    "priority": "High",
+    "createdAt": "2025-05-20T10:00:00Z",
+    "updatedAt": "2025-05-20T10:00:00Z"
+  },
+  {
+    "_id": "2",
+    "name": "Beta Inc",
+    "source": "Referral",
+    "salesAgent": {
+      "_id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com"
+    },
+    "status": "Contacted",
+    "tags": [{ "_id": "2", "name": "Follow-up" }],
+    "timeToClose": 15,
+    "priority": "Medium",
+    "createdAt": "2025-05-21T12:00:00Z",
+    "updatedAt": "2025-05-22T12:00:00Z"
+  },
+  {
+    "_id": "3",
+    "name": "Gamma Ltd",
+    "source": "Cold Call",
+    "salesAgent": {
+      "_id": "1",
+      "name": "John Doe",
+      "email": "john@example.com"
+    },
+    "status": "Closed",
+    "tags": [{ "_id": "3", "name": "Urgent" }],
+    "timeToClose": 10,
+    "priority": "Low",
+    "createdAt": "2025-05-23T09:00:00Z",
+    "updatedAt": "2025-05-25T09:00:00Z"
+  }
+]

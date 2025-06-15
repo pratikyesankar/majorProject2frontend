@@ -47,7 +47,7 @@ function LeadDetails() {
   return (
     <div className="lead-details">
       <h2>Lead Details</h2>
-      <div className="p-3 border rounded bg-white">
+      <div className="p-3 border rounded w-50">
         <p>
           <strong>Name:</strong> {lead.name}
         </p>
