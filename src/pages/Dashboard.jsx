@@ -10,19 +10,19 @@ function Dashboard() {
   const [searchParams, setSearchParams] = useSearchParams()
 
   useEffect(() => {
-    const fetchLeads = async () => {
-      try {
-        const status = searchParams.get("status") || ""
-        const response = await axios.get(
-          `http://localhost:5000/leads?status=${status}`
-        )
-        setLeads(response.data)
-      } catch (error) {
-        console.error("Error fetching leads:", error)
-      }
+  const fetchLeads = async () => {
+    try {
+      const status = searchParams.get("status") || ""
+      const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+      const response = await axios.get(`${BASE_URL}/leads?status=${status}`)
+      setLeads(response.data)
+    } catch (error) {
+      console.error("Error fetching leads:", error)
     }
-    fetchLeads()
-  }, [searchParams])
+  }
+  fetchLeads()
+}, [searchParams])
+
 
   const handleFilter = (status) => {
     setSearchParams({ status })
