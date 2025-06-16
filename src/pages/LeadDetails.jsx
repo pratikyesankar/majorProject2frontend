@@ -13,7 +13,7 @@ function LeadDetails() {
     const fetchLead = async () => {
       try {
         console.log("Fetching lead with ID:", id)
-        const response = await axios.get(`http://localhost:5000/leads/${id}`)
+        const response = await axios.get(`https://major-project2backend-wsj7.vercel.app/leads/${id}`)
         console.log("Lead response:", response.data)
         setLead(response.data)
         setError(null)

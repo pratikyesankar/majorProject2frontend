@@ -18,7 +18,7 @@ function SalesAgentView() {
           params.status = searchParams.get("status")
         if (searchParams.get("priority"))
           params.priority = searchParams.get("priority")
-        const response = await axios.get("http://localhost:5000/leads", {
+        const response = await axios.get("https://major-project2backend-wsj7.vercel.app/leads", {
           params,
         })
         setLeads(response.data)
@@ -28,7 +28,7 @@ function SalesAgentView() {
     }
     const fetchAgents = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/agents")
+        const response = await axios.get("https://major-project2backend-wsj7.vercel.app/agents")
         setAgents(response.data)
       } catch (error) {
         console.error("Error fetching agents:", error)

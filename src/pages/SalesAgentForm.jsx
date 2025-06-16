@@ -15,7 +15,7 @@ function SalesAgentForm() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      await axios.post("http://localhost:5000/agents", formData)
+      await axios.post("https://major-project2backend-wsj7.vercel.app/agents", formData)
       navigate("/agents")
     } catch (error) {
       console.error("Error creating agent:", error)

@@ -18,7 +18,7 @@ function LeadForm() {
   useEffect(() => {
     const fetchAgents = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/agents")
+        const response = await axios.get("https://major-project2backend-wsj7.vercel.app/agents")
         setAgents(response.data)
       } catch (error) {
         console.error("Error fetching agents:", error)
@@ -44,7 +44,7 @@ function LeadForm() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      await axios.post("http://localhost:5000/leads", formData)
+      await axios.post("https://major-project2backend-wsj7.vercel.app/leads", formData)
       setMessage("Lead created successfully!")
 
       setFormData({
