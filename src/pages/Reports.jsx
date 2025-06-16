@@ -12,12 +12,12 @@ function Reports() {
   useEffect(() => {
     const fetchReports = async () => {
       try {
-        const leadsResponse = await axios.get("http://localhost:5000/leads")
+        const leadsResponse = await axios.get("https://major-project2backend-wsj7.vercel.app/leads")
         const pipelineResponse = await axios.get(
-          "http://localhost:5000/report/pipeline"
+          "https://major-project2backend-wsj7.vercel.app/report/pipeline"
         )
         const closedByAgentResponse = await axios.get(
-          "http://localhost:5000/report/closed-by-agent"
+          "https://major-project2backend-wsj7.vercel.app/report/closed-by-agent"
         )
         setLeads(leadsResponse.data)
         setPipeline(pipelineResponse.data.totalLeadsInPipeline)
