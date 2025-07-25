@@ -32,7 +32,7 @@ npm run dev
 
 
 ## Demo Video
-([Loom Video]([https://frontend-workasana-p6hf.vercel.app/login](https://drive.google.com/file/d/1dYTK7snW_LtqlnT6hPdcL-emelmOrfM0/view?usp=sharing)
+([Loom Video](https://drive.google.com/file/d/1dYTK7snW_LtqlnT6hPdcL-emelmOrfM0/view?usp=sharing))
 ---
 
 ## Features
